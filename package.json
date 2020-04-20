@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Duct Bootstrap Template",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.4.1"
   },
   "devDependencies": {
     "browser-sync": "^2.2.0",

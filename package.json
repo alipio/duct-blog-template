@@ -2,11 +2,10 @@
   "name": "duct-blog",
   "version": "1.0.0",
   "description": "Duct Bootstrap Template",
-  "dependencies": {
-    "bootstrap": "^3.3.6"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.2.0",
+    "gulp": "^3.9.1",
     "gulp-fs": "0.0.2",
     "gulp-sass": "^2.2.0",
     "gulp-template": "^4.0.0"

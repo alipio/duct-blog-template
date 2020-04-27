@@ -1,18 +1,18 @@
 var gulp = require('gulp');
-var template = require('gulp-template');
-var fs = require('fs');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var template = require('gulp-template');
+var fs = require('fs');
 
 gulp.task('sass', function() {
   return gulp
-    .src('scss/*.scss')
+    .src('scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./app/css'))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(browserSync.stream());
 });
 
-gulp.task('templates', function () {
+gulp.task('templates', ['sass'], function () {
   var templates = {};
   var files = fs.readdirSync('./pages/partials')
     .filter(function(file) {
@@ -39,11 +39,10 @@ gulp.task('templates', function () {
 gulp.task('serve', ['templates'], function() {
   browserSync.init({
     server: './app',
-    files: ['app/css/*.css'],
     index: 'home.html'
   });
 
-  // gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('pages/**/*.html', ['templates']).on('change', browserSync.reload);
 });
 

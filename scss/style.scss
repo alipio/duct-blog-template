@@ -1,0 +1,8 @@
+$enable-flex:               true;
+$enable-grid-classes:       true;
+
+body {
+  padding-top: 56px;
+}
+
+@import 'bootstrap/scss/bootstrap.scss';

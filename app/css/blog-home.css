@@ -1,7 +1,59 @@
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 16px;
 }
 
 footer {
     margin: 20px 0;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.post-preview {
+  border-top: 1px solid rgba(0,0,0,.1);
+  padding: 1.5rem 0;
+}
+
+.post-preview .post-meta {
+  margin: 0 0 1rem 0;
+}
+
+.post-meta {
+  display: block;
+  position: relative;
+  font-weight: 300;
+}
+
+.post-meta img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 32px;
+  border-radius: 30px;
+}
+
+.post-meta .info {
+  margin: 0 1.5rem 0 .3rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1rem;
+}
+
+.post-meta .info .author {
+  display: block;
+  font-weight: 500 !important;
+}
+
+.post-meta .info .date {
+  color: #bbb;
+  font-size: 0.8rem;
+  display: block;
 }

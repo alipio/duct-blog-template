@@ -1,0 +1,65 @@
+{% extends "layout-2col.html" %}
+
+{% block main %}
+<h1 class="my-4">Blog Listing
+  <small>Secondary Text</small>
+</h1>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <div class="d-flex flex-row align-items-center">
+      <div class="mr-2">
+        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+      </div>
+      <div>
+        <div class="m-0">Lee Cross</div>
+        <div class="text-muted" style="font-size: 0.8rem;"><i class="fa fa-clock-o"></i> 10 min ago</div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <a class="card-link" href="#">
+      <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h3>
+    </a>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+      sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+    </p>
+    <a class="action-link" href="#">Read More...</a>
+  </div>
+  <div class="card-footer">
+    <a href="#" class="card-link"><i class="fa fa-gittip"></i> 40 Likes</a>
+    <a href="#" class="card-link"><i class="fa fa-comment"></i> 3 Comments</a>
+  </div>
+</div>
+
+<!-- Blog Post -->
+<div class="card mb-4">
+  <div class="card-body">
+    <h2 class="card-title">Post Title</h2>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+    <a href="#" class="btn btn-primary">Read More &rarr;</a>
+  </div>
+  <div class="card-footer text-muted">
+    Posted on January 1, 2017 by
+    <a href="#">Start Bootstrap</a>
+    <button class="btn btn-outline-primary btn-sm float-right">
+      <i class="ion-heart"></i> 29
+    </button>
+  </div>
+</div>
+
+<!-- Pagination -->
+<ul class="pagination justify-content-center mb-4">
+  <li class="page-item">
+    <a class="page-link" href="#">&larr; Older</a>
+  </li>
+  <li class="page-item disabled">
+    <a class="page-link" href="#">Newer &rarr;</a>
+  </li>
+</ul>
+{% endblock %}
+
+{% block sidebar %}
+	{% include "sidebar.html" %}
+{% endblock %}

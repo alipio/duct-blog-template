@@ -28,7 +28,7 @@
     "webpack-stream": "^4.0.3"
   },
   "dependencies": {
-    "bootstrap": "4.1.1",
+    "bootstrap": "4.3.1",
     "font-awesome": "^4.7.0"
   }
 }
